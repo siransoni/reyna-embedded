@@ -7,3 +7,71 @@
 .case .prob{color:#cbd5e1;font-weight:700}
 .case .res{color:var(--accent2);font-weight:700}
 .footer a{color:var(--muted);text-decoration:underline}
+
+/* ---- Hover animations (added for polish) ---- */
+/* Bounce easing: a little overshoot then settle */
+.card,.pill,.btn,.case,.stat,.nav-links a,.hero-card,.brand{
+  transition:transform .28s cubic-bezier(.34,1.56,.64,1),
+             box-shadow .28s ease,
+             border-color .28s ease,
+             color .28s ease,
+             background .28s ease;
+}
+/* Service / portfolio / who-this-is-for bubbles */
+.card:hover{
+  transform:translateY(-6px) scale(1.02);
+  border-color:var(--accent);
+  box-shadow:0 16px 40px rgba(56,189,248,.18);
+}
+.light .card:hover{
+  border-color:var(--accent);
+  box-shadow:0 16px 40px rgba(56,189,248,.22);
+}
+/* Skill pills */
+.pill:hover{
+  transform:translateY(-3px);
+  border-color:var(--accent);
+  color:var(--accent);
+}
+/* Buttons — Email Anthony, Start a project, See proof, etc. */
+.btn:hover{
+  transform:translateY(-4px) scale(1.03);
+  box-shadow:0 12px 28px rgba(56,189,248,.35);
+}
+.btn.secondary:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+  box-shadow:0 12px 28px rgba(56,189,248,.18);
+}
+.cta .btn.secondary:hover{
+  border-color:#06121f;
+  color:#06121f;
+  box-shadow:0 12px 28px rgba(0,0,0,.2);
+}
+/* Portfolio case-study rows */
+.case:hover{
+  transform:translateY(-5px);
+  border-color:var(--accent);
+  box-shadow:0 16px 40px rgba(56,189,248,.16);
+}
+/* Homepage hero stat rows */
+.stat:hover{
+  transform:translateX(6px);
+}
+/* Nav + brand */
+.nav-links a:hover{color:var(--accent)}
+.brand:hover{transform:translateY(-2px)}
+/* Contact + hero side card */
+.hero-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 26px 80px rgba(0,0,0,.4);
+}
+/* Anyone who prefers no motion gets none of it */
+@media(prefers-reduced-motion:reduce){
+  .card,.pill,.btn,.case,.stat,.nav-links a,.hero-card,.brand{
+    transition:none;
+  }
+  .card:hover,.pill:hover,.btn:hover,.case:hover,.stat:hover,.hero-card:hover,.brand:hover{
+    transform:none;
+  }
+}

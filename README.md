@@ -1,20 +1,21 @@
-# Reyna Embedded Solutions Website
+# Reyna Embedded Solutions
 
-Static site for Anthony Reyna's embedded systems contracting business.
-Live at: https://siransoni.github.io/reyna-embedded/
+Portfolio and services site for Anthony Reyna — embedded systems and firmware
+engineering, Austin / Round Rock, TX.
+
+Live: https://siransoni.github.io/reyna-embedded/
+
+## Stack
+Static HTML + CSS. No build step, no dependencies.
 
 ## Pages
-- `index.html` — homepage
-- `services.html` — fixed-scope offers
-- `portfolio.html` — outcome-framed case studies + independent builds
-- `contact.html` — contact page
-- `outreach.html` — INTERNAL (unlinked, noindex). Not in nav on purpose.
-- `styles.css` — site styling
+- `index.html` — home
+- `services.html` — services
+- `portfolio.html` — selected work
+- `contact.html` — contact
 
-## Deploying updates
-```
-git add -A
-git commit -m "Update site"
-git push
-```
-GitHub Pages redeploys automatically within ~1 minute.
+## Local preview
+Open `index.html` in any browser.
+
+## Deploy
+Push to `main`; GitHub Pages redeploys automatically.
