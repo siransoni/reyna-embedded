@@ -1,14 +1,20 @@
 # Reyna Embedded Solutions Website
 
-Static site for Anthony Reyna's embedded systems consulting startup.
+Static site for Anthony Reyna's embedded systems contracting business.
+Live at: https://siransoni.github.io/reyna-embedded/
 
 ## Pages
 - `index.html` — homepage
 - `services.html` — fixed-scope offers
-- `portfolio.html` — proof-of-work case studies
-- `outreach.html` — internal outreach positioning
+- `portfolio.html` — outcome-framed case studies + independent builds
 - `contact.html` — contact page
+- `outreach.html` — INTERNAL (unlinked, noindex). Not in nav on purpose.
 - `styles.css` — site styling
 
-## How to use
-Open `index.html` locally in a browser. To publish quickly, drag this folder into Netlify, Vercel, or GitHub Pages.
+## Deploying updates
+```
+git add -A
+git commit -m "Update site"
+git push
+```
+GitHub Pages redeploys automatically within ~1 minute.
